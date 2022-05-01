@@ -11,7 +11,7 @@ local conda_path
 
 M.setup = function(setup_config)
 	local home = os.getenv("HOME")
-	local viableInstallationDirs = { "/miniconda3", "/anaconda3" }
+	local viableInstallationDirs = { "./miniconda3", "./anaconda3" }
 
 	conda_path = setup_config.anaconda_path or nil -- TODO throw error on wrong path
 
